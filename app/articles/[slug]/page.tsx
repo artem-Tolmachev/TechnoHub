@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Breadcrumbs } from "@/shared/ui/Breadcrumbs";
 import { getArticleContent } from "@/shared/lib/mdx";
 import { RelatedArticles } from "@/entities/articel";
+import { siteConfig } from "@/shared/config/site";
 
 type Props = {
   params: Promise<{
@@ -37,13 +38,13 @@ export async function generateMetadata({
     description: article.description,
 
     alternates: {
-      canonical: `https://твой-домен.ru/articles/${article.slug}`,
+      canonical: `${siteConfig.url}/articles/${article.slug}`,
     },
 
     openGraph: {
       title: article.title,
       description: article.description,
-      url: `https://твой-домен.ru/articles/${article.slug}`,
+      url: `${siteConfig.url}/articles/${article.slug}`,
       images: [
         {
           url: article.img,
@@ -71,19 +72,23 @@ export default async function ArticlePage({ params }: Props) {
     notFound();
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: article.title,
-    description: article.description,
-    image: [article.img],
-    datePublished: article.publishedAt,
-    dateModified: article.updatedAt,
-    author: {
-      "@type": "Organization",
-      name: article.author,
-    },
-  };
+ const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: article.title,
+  description: article.description,
+  image: [article.img],
+  datePublished: article.publishedAt,
+  dateModified: article.updatedAt,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `${siteConfig.url}/articles/${article.slug}`,
+  },
+  author: {
+    "@type": "Person",
+    name: article.author,
+  },
+};
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -93,13 +98,13 @@ export default async function ArticlePage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Главная",
-        item: "https://твой-домен.ru/",
+        item: `${siteConfig.url}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: article.breadcrumbTitle,
-        item: `https://твой-домен.ru/articles/${article.slug}`,
+        item: `${siteConfig.url}/articles/${article.slug}`,
       },
     ],
   };
@@ -132,7 +137,7 @@ export default async function ArticlePage({ params }: Props) {
             </h1>
 
             <div className="img-wr relative h-[190px] md:h-[500px] w-full overflow-hidden mt-2">
-            {
+            {/* {
                 article.imageAlt && (
                 <Image
                     src={article.img}
@@ -142,8 +147,15 @@ export default async function ArticlePage({ params }: Props) {
                     className="object-cover"
                 />
                 )
-            }
-
+            } */}
+                        
+                <Image
+                    src={article.img}
+                    alt={article.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 992px"
+                    className="object-cover"
+                />
 
                 <span className="hidden xl:block article-title absolute bottom-6 left-6 right-6 text-4xl font-bold text-white border-r-[10px] border-r-[#05b039] z-2">
                     {article.title}
