@@ -30,6 +30,9 @@ const ibmPlexSans = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: "ТехноХаб",
   description: "Новости и статьи о технологиях, AI и науке",
+  verification: {
+    google: "OQ-a988kQB30nd1sxkhkDDzBTGrnCE8XQ1CyuGopVsQ",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
