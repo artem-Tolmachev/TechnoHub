@@ -1,0 +1,43 @@
+import Image from "next/image";
+import Link from "next/link";
+
+interface Props {
+    title: string;
+    description: string;
+    img: string;
+    category: string;
+    slug: string;
+    publishedAt: string;
+}
+
+export default function ArticleCard({title, publishedAt, slug, category, img}: Props) {
+
+  return (
+    <Link href={`/articles/${slug}`}>
+        <article className="md:w-[320px]">
+            <div className="relative h-[220px] overflow-hidden mb-2">
+              <Image
+                src={img}
+                alt={title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 320px"
+              />
+            </div>
+
+            <span className="font-bold uppercase text-sm text-primary ">{category}</span>
+
+            <h3 className="card-title">{title}</h3>
+
+            <time dateTime={publishedAt}>
+              {new Date(publishedAt).toLocaleDateString("ru-RU", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })}
+            </time>
+      </article>      
+    </Link>
+
+  )
+}
