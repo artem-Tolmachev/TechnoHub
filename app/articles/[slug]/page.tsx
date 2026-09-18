@@ -132,11 +132,11 @@ export default async function ArticlePage({ params }: Props) {
                 breadcrumbTitle={article.breadcrumbTitle}
             />
 
-            <h1 className="max-[440px]:px-[15px] mt-2 mb-3 md:mt-4 md:mb-5 text-[23px] md:text-[28px] xl:hidden  text-4xl font-bold">
+            <h1 className="max-[1280px]:px-[15px] mt-2 mb-3 md:mt-4 md:mb-5 text-[23px] md:text-[28px] xl:hidden  text-4xl font-bold">
                 {article.title}
             </h1>
 
-            <div className="img-wr relative h-[190px] md:h-[500px] w-full overflow-hidden mt-2">
+            <div className="bg-gray-700 img-wr relative h-[190px] md:h-[500px] w-full overflow-hidden mt-2">
             {/* {
                 article.imageAlt && (
                 <Image
@@ -162,7 +162,7 @@ export default async function ArticlePage({ params }: Props) {
                 </span>
             </div>
 
-            <div className="max-[440px]:px-[15px] flex flex-col gap-20 xl:flex-row article-content bg-white xl:pl-20 xl:pr-10 pt-3 md:pt-6 pb-3 md:pb-6">
+            <div className="max-[1280px]:px-[15px] flex flex-col gap-20 xl:flex-row article-content bg-white xl:pl-20 xl:pr-10 pt-3 md:pt-6 pb-3 md:pb-6">
                 <div className="flex flex-col 2xl:w-[80%]">
                     <div className="author-inf flex  items-center gap-4 md:pt-2 md:pb-2">
                         {article.avatar && (

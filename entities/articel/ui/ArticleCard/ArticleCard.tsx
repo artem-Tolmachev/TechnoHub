@@ -15,7 +15,7 @@ export default function ArticleCard({title, publishedAt, slug, category, img}: P
   return (
     <Link href={`/articles/${slug}`}>
         <article className="md:w-[320px]">
-            <div className="relative h-[220px] overflow-hidden mb-2">
+            <div className="relative h-[220px] overflow-hidden mb-2 bg-gray-700">
               <Image
                 src={img}
                 alt={title}

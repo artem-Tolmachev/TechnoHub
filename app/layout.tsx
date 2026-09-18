@@ -43,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full">
         <Header/>
-        <main className=" xl:bg-[var(--color-sec)] font-sans gap-4 w-full flex justify-center">
+        <main className="font-sans gap-4 w-full flex justify-center">
           {children}
         </main>
       </body>
