@@ -3,7 +3,7 @@ export default function ArticleListLatest() {
 
   return (
     <>
-      <div className="w-full py-[20px] flex justify-center">
+      <div className=" py-[20px] flex justify-center">
         <h1 className="tehno-title text-[30px] lg:text-[36px]">Техно Новости</h1>
       </div>
     </>

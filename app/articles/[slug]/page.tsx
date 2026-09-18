@@ -125,14 +125,14 @@ export default async function ArticlePage({ params }: Props) {
         }}
       />
 
-      <section className="pt-5 md:pt-10 pb-10 pl-4 pr-4 flex flex-col max-w-80 md:max-w-none md:w-164 xl:w-[992px] 2xl:w-[1200px] gap-10">
+      <section className="pt-5 md:pt-10 pb-10 flex flex-col max-w-[440px] md:max-w-none  xl:w-[992px] 2xl:w-[1200px] gap-10">
         <article>
 
             <Breadcrumbs
                 breadcrumbTitle={article.breadcrumbTitle}
             />
 
-            <h1 className="mt-2 mb-3 md:mt-4 md:mb-5 text-[23px] md:text-[28px] xl:hidden  text-4xl font-bold">
+            <h1 className="max-[440px]:px-[15px] mt-2 mb-3 md:mt-4 md:mb-5 text-[23px] md:text-[28px] xl:hidden  text-4xl font-bold">
                 {article.title}
             </h1>
 
@@ -162,7 +162,7 @@ export default async function ArticlePage({ params }: Props) {
                 </span>
             </div>
 
-            <div className="flex flex-col gap-20 xl:flex-row article-content bg-white xl:pl-20 xl:pr-10 pt-3 md:pt-6 pb-3 md:pb-6">
+            <div className="max-[440px]:px-[15px] flex flex-col gap-20 xl:flex-row article-content bg-white xl:pl-20 xl:pr-10 pt-3 md:pt-6 pb-3 md:pb-6">
                 <div className="flex flex-col 2xl:w-[80%]">
                     <div className="author-inf flex  items-center gap-4 md:pt-2 md:pb-2">
                         {article.avatar && (
@@ -207,9 +207,9 @@ export default async function ArticlePage({ params }: Props) {
                             </span>
                         </div>
                         <ArticleContent />
-                        <RelatedArticles
+                        {/* <RelatedArticles
                           relatedArticles={article.relatedArticles}
-                        />
+                        /> */}
                     </div>
                     
                 </div>

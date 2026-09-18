@@ -156,4 +156,36 @@ export const articles = [
 
     relatedArticles: [],
   },
+  {
+  slug: "levitas-konstantina-chaykina-paryashchie-strelki",
+
+  title:
+    "Как работают часы Levitas Константина Чайкина: секрет «парящих» стрелок",
+
+  description:
+    "Часы Levitas Константина Чайкина создают иллюзию парящих стрелок благодаря прозрачным сапфировым дискам и скрытому механическому приводу.",
+
+  intro:
+    "Часы Levitas Константина Чайкина выглядят так, будто стрелки парят в воздухе внутри прозрачного циферблата. За необычным эффектом скрывается механический механизм с прозрачными сапфировыми дисками и практически незаметным приводом.",
+
+  category: "Технологии",
+
+  breadcrumbTitle:
+    "Как работают часы Levitas",
+
+  img: "/images/articles/levitas-chaykin.png",
+
+  imageAlt:
+    "Часы Levitas Константина Чайкина с парящими стрелками",
+
+  author: "Толмачев Артем",
+
+  avatar: "/images/articles/art.png",
+
+  publishedAt: "2026-09-18",
+
+  updatedAt: "2026-09-18",
+
+  relatedArticles: [],
+  },
 ];

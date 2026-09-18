@@ -24,6 +24,12 @@ export async function getArticleContent(slug: string) {
           "@/content/articles/solnechnye-paneli-pod-vodoy-10-metrov.mdx"
         )
       ).default;
+    case "levitas-konstantina-chaykina-paryashchie-strelki":
+      return (
+        await import(
+          "@/content/articles/levitas-konstantina-chaykina-paryashchie-strelki.mdx"
+        )
+      ).default;
     default:
       return null;
   }

@@ -25,17 +25,19 @@ export default function ArticleCard({title, publishedAt, slug, category, img}: P
               />
             </div>
 
-            <span className="font-bold uppercase text-sm text-primary ">{category}</span>
+            <div className="max-[440px]:px-[15px]">
+              <span className="font-bold uppercase text-sm text-primary ">{category}</span>
 
-            <h3 className="card-title">{title}</h3>
+              <h3 className="card-title">{title}</h3>
 
-            <time dateTime={publishedAt}>
-              {new Date(publishedAt).toLocaleDateString("ru-RU", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </time>
+              <time dateTime={publishedAt}>
+                {new Date(publishedAt).toLocaleDateString("ru-RU", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
+            </div>
       </article>      
     </Link>
 
