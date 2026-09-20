@@ -15,12 +15,12 @@ export default function ArticleCard({title, publishedAt, slug, category, img}: P
   return (
     <Link href={`/articles/${slug}`}>
         <article className="md:w-[320px]">
-            <div className="relative h-[220px] overflow-hidden mb-2 bg-gray-700">
+            <div className="relative h-auto aspect-video md:h-[180px] overflow-hidden mb-2 bg-gray-700">
               <Image
                 src={img}
                 alt={title}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 320px"
               />
             </div>

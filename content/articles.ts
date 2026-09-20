@@ -15,7 +15,7 @@ export const articles = [
 
     breadcrumbTitle: "DEHP и беременность",
 
-    img: "/images/articles/mikroplastik.png",
+    img: "/images/articles/mikroplastik.webp",
 
     imageAlt:
       "Микропластик",
@@ -48,7 +48,7 @@ export const articles = [
 
     breadcrumbTitle: "ИИ на психотерапии",
 
-    img: "/images/articles/ai-therapy.png",
+    img: "/images/articles/ai-therapy.webp",
 
     imageAlt:
       "ChatGPT, Grok и Gemini в кабинете на приеме у психотерапевта",
@@ -110,7 +110,7 @@ export const articles = [
 
     breadcrumbTitle: "AfterQuery — $3,2 млрд",
 
-    img: "/images/articles/afterquery.png",
+    img: "/images/articles/afterquery.webp",
 
     imageAlt:
       "Рисунок основатели AI стартапа в процессе работы",
@@ -141,7 +141,7 @@ export const articles = [
 
     breadcrumbTitle: "Солнечные панели под водой",
 
-    img: "/images/articles/underwater-solar.png",
+    img: "/images/articles/underwater-solar.webp",
 
     imageAlt:
       "Перовскитные солнечные элементы работают под водой на глубине.",
@@ -173,7 +173,7 @@ export const articles = [
   breadcrumbTitle:
     "Как работают часы Levitas",
 
-  img: "/images/articles/levitas-chaykin.png",
+  img: "/images/articles/levitas-chaykin.webp",
 
   imageAlt:
     "Часы Levitas Константина Чайкина с парящими стрелками",
@@ -200,7 +200,7 @@ export const articles = [
   publishedAt: "2026-09-20",
   updatedAt: "2026-09-20",
   author: "Толмачев Артем",
-  img: "/images/articles/chip1.png",
+  img: "/images/articles/chip1.webp",
   imageAlt:
     "Мозговой имплант Neuralink N1 для восстановления речи",
   breadcrumbTitle: "Neuralink и восстановление речи",
