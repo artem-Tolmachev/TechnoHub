@@ -188,4 +188,24 @@ export const articles = [
 
   relatedArticles: [],
   },
+  {
+  slug: "neuralink-mozgovoy-chip-vernul-rech",
+  title:
+    "Neuralink показала, как мозговой чип вернул человеку возможность говорить",
+  description:
+    "Neuralink показала работу мозгового импланта N1: участник с БАС смог передать фразу «I love you» с помощью нейроинтерфейса и синтезированного голоса.",
+  intro:
+  "Участник испытаний Neuralink с боковым амиотрофическим склерозом смог передать фразу с помощью мозгового импланта N1, а система преобразовала нейросигналы в синтезированную речь.",
+  category: "Медицина и наука",
+  publishedAt: "2026-09-20",
+  updatedAt: "2026-09-20",
+  author: "Толмачев Артем",
+  img: "/images/articles/chip1.png",
+  imageAlt:
+    "Мозговой имплант Neuralink N1 для восстановления речи",
+  breadcrumbTitle: "Neuralink и восстановление речи",
+  relatedArticles: [
+    "dehp-beremennost-autizm-sdvg",
+  ],
+}
 ];

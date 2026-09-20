@@ -30,6 +30,12 @@ export async function getArticleContent(slug: string) {
           "@/content/articles/levitas-konstantina-chaykina-paryashchie-strelki.mdx"
         )
       ).default;
+    case "neuralink-mozgovoy-chip-vernul-rech":
+      return (
+        await import(
+          "@/content/articles/neuralink-mozgovoy-chip-vernul-rech.mdx"
+        )
+      ).default;
     default:
       return null;
   }

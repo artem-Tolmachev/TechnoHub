@@ -136,19 +136,8 @@ export default async function ArticlePage({ params }: Props) {
                 {article.title}
             </h1>
 
-            <div className="bg-gray-700 img-wr relative h-[190px] md:h-[500px] w-full overflow-hidden mt-2">
-            {/* {
-                article.imageAlt && (
-                <Image
-                    src={article.img}
-                    alt={article.imageAlt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 992px"
-                    className="object-cover"
-                />
-                )
-            } */}
-                        
+            <div className="aspect-video bg-gray-700 img-wr relative w-full overflow-hidden mt-2">
+   
                 <Image
                     src={article.img}
                     alt={article.imageAlt}
@@ -160,6 +149,7 @@ export default async function ArticlePage({ params }: Props) {
                 <span className="hidden xl:block article-title absolute bottom-6 left-6 right-6 text-4xl font-bold text-white border-r-[10px] border-r-[#05b039] z-2">
                     {article.title}
                 </span>
+
             </div>
 
             <div className="max-[1280px]:px-[15px] flex flex-col gap-20 xl:flex-row article-content bg-white xl:pl-20 xl:pr-10 pt-3 md:pt-6 pb-3 md:pb-6">
@@ -207,9 +197,9 @@ export default async function ArticlePage({ params }: Props) {
                             </span>
                         </div>
                         <ArticleContent />
-                        {/* <RelatedArticles
+                        <RelatedArticles
                           relatedArticles={article.relatedArticles}
-                        /> */}
+                        />
                     </div>
                     
                 </div>
