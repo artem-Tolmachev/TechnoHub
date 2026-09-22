@@ -14,9 +14,20 @@ export default function RelatedArticles({
     )
     .filter(Boolean);
 
+
+console.log("relatedArticles:", relatedArticles);
+
+relatedArticles.forEach((slug) => {
+  const found = articles.find((article) => article.slug === slug);
+
+  console.log("slug:", slug);
+  console.log("found:", found);
+});
+
   if (!articlesToShow.length) {
     return null;
   }
+
 
   return (
     <section className="mt-10">
@@ -25,15 +36,17 @@ export default function RelatedArticles({
       </h2>
 
       <div className="flex flex-col gap-3">
-        {articlesToShow.map((article) => (
-          <Link
-            key={article!.slug}
-            href={`/articles/${article!.slug}`}
-            className="font-medium text-primary hover:underline"
-          >
-            {article!.title}
-          </Link>
-        ))}
+        <div className="flex flex-col gap-3">
+          {articlesToShow.map((article) => (
+            <Link
+              key={article?.slug}
+              href={`/articles/${article?.slug}`}
+              className="font-medium text-primary hover:underline"
+            >
+              {article?.title}
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );

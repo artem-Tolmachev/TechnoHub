@@ -36,6 +36,12 @@ export async function getArticleContent(slug: string) {
           "@/content/articles/neuralink-mozgovoy-chip-vernul-rech.mdx"
         )
       ).default;
+    case "spatial-ai-analiz-povedeniya-pokupateley":
+      return (
+        await import(
+          "@/content/articles/spatial-ai-analiz-povedeniya-pokupateley.mdx"
+        )
+      ).default;
     default:
       return null;
   }

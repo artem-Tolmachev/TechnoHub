@@ -43,3 +43,5 @@ export default function ArticleCard({title, publishedAt, slug, category, img}: P
 
   )
 }
+
+// Куда направлено наше ценное для маркетологов внимание? Теперь это может измерить ИИ

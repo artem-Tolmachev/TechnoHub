@@ -207,5 +207,23 @@ export const articles = [
   relatedArticles: [
     "dehp-beremennost-autizm-sdvg",
   ],
+  },
+  {
+  slug: "spatial-ai-analiz-povedeniya-pokupateley",
+  title:
+    "Куда направлено наше ценное для маркетологов внимание? Теперь это может определить ИИ",
+  description:
+    "Spatial AI превращает обычные камеры в магазинах в систему анализа поведения покупателей, связывая видеопоток с 3D-моделью торгового пространства.",
+  intro:
+    "Spatial AI сопоставляет изображения с камер видеонаблюдения с 3D-моделью магазина, чтобы анализировать перемещения покупателей, время пребывания возле зон и взаимодействие с торговым пространством.",
+  category: "Технологии",
+  publishedAt: "2026-09-22",
+  updatedAt: "2026-09-22",
+  author: "Толмачев Артем",
+  img: "/images/articles/lucid-origin.webp",
+  imageAlt:
+    "Spatial AI анализирует поведение покупателей в магазине с помощью камер и 3D-модели",
+  breadcrumbTitle: "Spatial AI и анализ покупателей",
+  relatedArticles: ["afterquery-ocenka-3-2-mlrd", "google-deepmind-100-ai-agents", "chatgpt-grok-gemini-psihoterapiya"],
 }
 ];
